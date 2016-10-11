@@ -1,6 +1,6 @@
 Name:          harbour-dyncal-es
 Version:       0.3.0
-Release:       1
+Release:       2
 Summary:       DynCal Spain
 Group:         System/Tools
 Vendor:        carmenfdezb
@@ -38,7 +38,10 @@ fi
 fi
 
 %changelog
-* Tue Oct 11 2016 0.3
+* Tue Oct 11 2016 0.3.0-2
+- Minor fix.
+
+* Tue Oct 11 2016 0.3.0-1
 - Bug fix.
 - Icons improved: high-res and redesigned.
 - Updated to 2016-2017 calendar.

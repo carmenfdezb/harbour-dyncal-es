@@ -17,8 +17,11 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-ls /usr/share/harbour-dyncal-es/icons/ > /usr/share/harbour-dyncal-es/backup.txt
-for file in $(</usr/share/harbour-dyncal-es/backup.txt); do cp "/usr/share/harbour-dyncal/icons/$file" /usr/share/harbour-dyncal-es/backup/; done
-cp /usr/share/harbour-dyncal-es/icons/*.* /usr/share/harbour-dyncal/icons/
+dyncal=/usr/share/harbour-dyncal
+extension=/usr/share/harbour-dyncal-es
+
+ls $extension/icons/ > $extension/icons.list
+for file in $(<$extension/icons.list); do cp "$dyncal/icons/$file" $extension/backup/; done
+cp $extension/icons/*.* $dyncal/icons/
 
 exit 0
